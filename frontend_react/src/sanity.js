@@ -14,6 +14,11 @@ export async function getSpheres() {
   return spheres;
 }
 
+export async function getWorks() {
+  const works = await client.fetch('*[_type == "works"]');
+  return works;
+}
+
 const builder = imageUrlBuilder(client);
 
 export const urlFor = (source) => builder.image(source);
