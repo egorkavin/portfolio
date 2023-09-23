@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Testimonial.scss';
+import './Testimonial.styles.scss';
 
 const Testimonial = () => {
   return <div>Testimonial</div>;

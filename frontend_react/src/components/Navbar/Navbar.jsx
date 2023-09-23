@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import { images } from '../../constants';
 
-import './Navbar.scss';
+import './Navbar.styles.scss';
 import { NAVBAR_ITEMS, menuVariants } from './Navbar.constants';
 
 const Navbar = () => {

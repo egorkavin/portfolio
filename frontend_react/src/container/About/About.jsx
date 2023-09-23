@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './About.scss';
+import './About.styles.scss';
 
 const About = () => {
   return <div>About</div>;
