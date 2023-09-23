@@ -1,6 +1,6 @@
 export default {
-  name: 'abouts',
-  title: 'Abouts',
+  name: 'spheres',
+  title: 'Spheres',
   type: 'document',
   fields: [
     {
