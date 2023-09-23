@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { images } from '../../constants';
 
 import './Navbar.scss';
-import { menuVariants } from './Navbar.constants';
+import { NAVBAR_ITEMS, menuVariants } from './Navbar.constants';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+        {NAVBAR_ITEMS.map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div></div>
             <a href={`${item}`}>{item}</a>
@@ -35,7 +35,7 @@ const Navbar = () => {
             >
               <HiX onClick={() => setToggle(false)} />
               <ul>
-                {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+                {NAVBAR_ITEMS.map((item) => (
                   <li key={item}>
                     <a href={`${item}`} onClick={() => setToggle(false)}>
                       {item}
