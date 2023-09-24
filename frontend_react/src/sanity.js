@@ -29,6 +29,16 @@ export async function getExperiences() {
   return experiences;
 }
 
+export async function getTestimonials() {
+  const testimonials = await client.fetch('*[_type == "testimonials"]');
+  return testimonials;
+}
+
+export async function getBrands() {
+  const brands = await client.fetch('*[_type == "brands"]');
+  return brands;
+}
+
 const builder = imageUrlBuilder(client);
 
 export const urlFor = (source) => builder.image(source);
