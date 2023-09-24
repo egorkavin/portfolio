@@ -19,6 +19,16 @@ export async function getWorks() {
   return works;
 }
 
+export async function getSkills() {
+  const skills = await client.fetch('*[_type == "skills"]');
+  return skills;
+}
+
+export async function getExperiences() {
+  const experiences = await client.fetch('*[_type == "experiences"]');
+  return experiences;
+}
+
 const builder = imageUrlBuilder(client);
 
 export const urlFor = (source) => builder.image(source);
