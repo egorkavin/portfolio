@@ -39,6 +39,11 @@ export async function getBrands() {
   return brands;
 }
 
+export async function createContact(contact) {
+  const result = client.create({ _type: 'contact', ...contact });
+  return result;
+}
+
 const builder = imageUrlBuilder(client);
 
 export const urlFor = (source) => builder.image(source);
