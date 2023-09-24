@@ -3,6 +3,6 @@ export const NAVIGATION_ITEMS = [
   'about',
   'work',
   'skills',
-  'testimonials',
+  'testimonial',
   'contact',
 ];
